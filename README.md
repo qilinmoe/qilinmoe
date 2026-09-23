@@ -20,11 +20,11 @@
 [//]: # "Main Content"
 
 ```
-💼 <Software Eng.> @ Uninter • <Statistics> @ UFOP
+💼 <SWE> @ Uninter
 💻 Python • <C#> • <C++>
-🛠️ VSCode • <Jetbrains™>
-🧰 <Blender> • <Unity> • Photoshop
-🎮 Hoyoverse • Warframe • + more
+🛠️ VSCode • <Zed>
+🧰 <Blender> • Photoshop
+🎮 Overwatch • Wuthering Waves • + more
 
 <> = Learning
 ```
