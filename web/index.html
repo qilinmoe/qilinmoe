@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nana - backend & devops</title>
+  <meta name="description" content="nana - self-taught backend & devops developer. FastAPI, Linux, Docker, and self-hosted infra.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0a0a0a',
+            fg: '#d4d4d4',
+            dim: '#525252',
+            accent: '#7dd3fc',
+            accent2: '#86efac',
+          },
+          fontFamily: {
+            mono: ['"JetBrains Mono"', '"Fira Code"', 'ui-monospace', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #0b0e12;
+      color: #d4d4d4;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 65%;
+      display: block;
+    }
+    .banner::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(11, 14, 18, 0) 55%,
+        rgba(11, 14, 18, 0.85) 88%,
+        rgba(11, 14, 18, 1) 100%
+      );
+      pointer-events: none;
+    }
+
+    a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .dim { color: #525252; }
+    .accent { color: #b3dede; }
+
+    .cursor::after {
+      content: '|';
+      animation: blink 1s step-end infinite;
+      color: #7dd3fc;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 9999px;
+      object-fit: cover;
+      border: 1px solid rgba(125, 211, 252, 0.35);
+      box-shadow: 0 0 20px rgba(125, 211, 252, 0.15);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+
+  <!-- banner -->
+  <div class="banner">
+    <img src="/assets/banner.gif" alt="">
+  </div>
+
+  <main class="w-full max-w-2xl mx-auto px-6 pt-5 pb-16 text-sm leading-relaxed">
+
+    <!-- whoami -->
+    <div class="mb-10 flex items-center gap-4">
+      <img src="/assets/avatar.png" alt="qilin" class="avatar">
+      <div>
+        <div>
+          <span class="dim">$ ›</span> whoami
+        </div>
+        <div>
+          <span class="accent" style="text-decoration: underline;">nana</span>
+          <span class="dim">; backend & devops, ouro preto, brazil</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="mb-10">
+      <div><span class="dim">$ ›</span> cat about.txt</div>
+      <p class="mt-2 pl-4 dim">
+        > self-taught developer & software engineering student.<br>
+        > i built small systems end-to-end; fastapi services, discord bots, and self-hosted cloud infra.<br>
+        > looking for a <span class="accent" style="text-decoration: underline;">junior or intern role</span> on a backend or infrastructure team.
+      </p>
+    </div>
+
+    <!-- projects -->
+    <div class="mb-10">
+      <div><span class="dim">$ ›</span> ls projects/</div>
+      <div class="mt-2 pl-4 space-y-3">
+        <div>
+          <a href="https://github.com/qilinmoe/deezrpc">deezrpc</a>
+          <span class="dim">; discord rich presence for deezer. fastapi + httpx + pydantic.</span>
+        </div>
+        <div>
+          <a href="https://github.com/qilinmoe/sunshine-seulgi">sunshine-seulgi</a>
+          <span class="dim">; command-less discord music bot. share a deezer link, get an embed. hikari + miru + ongaku.</span>
+        </div>
+        <div>
+          <span>homelab</span>
+          <span class="dim">; oracle cloud vms running minecraft and pihole + cloudflare for email forwarding.</span>
+        </div>
+      </div>`
+    </div>
+
+    <!-- links -->
+    <div class="mb-10">
+      <div><span class="dim">$ ›</span> cat contact.json</div>
+      <div class="mt-2 pl-4 dim">
+        {<br>
+        &nbsp;&nbsp;"github": <a href="https://github.com/qilinmoe">"github.com/qilinmoe"</a>,<br>
+        &nbsp;&nbsp;"linkedin": <a href="https://linkedin.com/in/qilinmoe-en">"linkedin.com/in/qilinmoe-en"</a>,<br>
+        &nbsp;&nbsp;"email": <a href="mailto:nana@qilin.moe">"nana@qilin.moe"</a><br>
+        }
+      </div>
+    </div>
+
+    <div class="mt-4 mb-4 dim cursor">$ › </div>
+
+    <hr>
+
+    <!-- footer -->
+    <div class="mt-2 dim text-xs">
+      <span class="accent">☰</span> built with html + tailwind. hosted on vercel.
+    </div>
+
+  </main>
+</body>
+</html>
